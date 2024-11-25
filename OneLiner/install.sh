@@ -9,7 +9,8 @@ Welcome to the installation script for Unifi Network Application.
 
 This will deploy both the Unifi Network Application and MongoDB container, along with a bridge network to connect the two.
 
-If you previously deployed containers unifi-db and unifi-network-application, they will be reinstalled.
+If you previously deployed containers unifi-db and unifi-network-application, they will be REMOVED, and all data will be lost.
+This script is only used for deploying clean installations and NOT for upgrades.
 '
 read -p "Press enter to continue: " user_input
 if [ "$user_input" = "" ]; then
